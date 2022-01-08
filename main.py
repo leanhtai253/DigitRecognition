@@ -10,7 +10,7 @@ import os
 
 app = Flask(__name__)
 
-model = tf.keras.models.load_model('saved_model\HandwrittenDigitRecognizer.h5')
+model = tf.keras.models.load_model('HandwrittenDigitRecognizer.h5')
 
 #GET request
 @app.route("/", methods=['GET'])
